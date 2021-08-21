@@ -1,6 +1,7 @@
-import styled from "styled-components";
-import Img from "../../assets/imgs/myimage.png";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import Img from '../../assets/imgs/myimage.png';
+import { Link } from 'react-router-dom';
+import { Link as RLink } from 'react-scroll';
 
 export const Container = styled.div`
   display: flex;
@@ -49,26 +50,18 @@ export const NavMenu = styled.ul`
     height: 90vh;
     position: absolute;
     top: 80px;
-    left: ${({ click }) => (click ? "0" : "-100%")};
+    left: ${({ click }) => (click ? '0' : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
     background: #818fa1;
     justify-content: center;
   }
 `;
-export const NavItem = styled.li`
-  list-style: none;
-  margin: 1.5rem 0 1.5rem 30px;
-  &:last-child {
-    margin-right: 0;
-  }
-  @media (max-width: 960px) {
-    width: 100%;
-  }
-`;
-export const NavLink = styled(Link)`
+
+export const NavLink = styled(RLink)`
   text-decoration: none;
   display: flex;
+  margin: 1.5rem 0 1.5rem 30px;
   align-items: center;
   color: #fcfbf869;
   height: 100%;
