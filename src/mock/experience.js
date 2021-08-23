@@ -5,14 +5,14 @@ export const Experience = [
     name: "JavaScript",
     status: "Udemy, Bootcamp-projects",
     description:
-      "At the beginning I started to learn Front End Developing online on Udemy course platform and made some small projects with instructor",
+      "In the beginning, Udemy courses were handy to learn Front-end development which gave me an opportunity to make some interesting projects with the help of the instructor.",
   },
   {
     id: 2,
     name: "Css and Sass",
     status: "Udemy, Bootcamp-course",
     description:
-      "During my journey on Web development I realised that making responsive websites and awesome looking designs are important in this feild, so I studied advanced styling on css and sass",
+      "During my journey in Web development, I realized that making responsive websites and awesome looking designs are important in this field, so dived deep into studying advanced styling on css and sass",
   },
   {
     num: 0,
@@ -20,14 +20,14 @@ export const Experience = [
     name: "React",
     status: "Self-study",
     description:
-      "As Web development is updating dramaticly  day by day, new handy and usefull frameworks,libraries are being resealed to make better websites, so that I tried to become expert in Reactjs library and made few projects on it.",
+      "As Web development is updating dramatically day by day, new handy and useful frameworks, libraries are being released to make better websites, so that to be aware of them, trying to do even small projects on it.",
   },
   {
     id: 4,
     name: "GitHub",
     status: "Team Work",
     description:
-      "These days, I am participating on the  projects like orderfood and houzing  with the team via GitHub which is giving me opportunity to gain communication and collobaration skills, along side with having a great experince! ",
+      "These days, I am participating in the projects like orderfood and houzing with the team via GitHub which is giving me an opportunity to gain communication and collaboration skills, alongside having a great experience!",
   },
   {
     num: 0,
@@ -35,6 +35,6 @@ export const Experience = [
     name: "University",
     status: "Computer Engineering and IBBA",
     description:
-      "Currently, I am studying my last semester at Computer engineering and Business admnistration departments in Sejong University, Seoul, South Korea.",
+      "Currently, I am studying my last semester at the Computer engineering and Business administration departments at Sejong University, Seoul, South Korea.",
   },
 ];

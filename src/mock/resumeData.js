@@ -2,6 +2,6 @@ export const data = [
   {
     id: 1,
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore harum rem dignissimos omnis. Expedita aliquam libero totam delectus quas temporibus enim sint et rem magni, doloribus ea, pariatur explicabo mollitia.",
+      "Hardworking and passionate jobseeker with strong organizational skills eager to secure entry-level Web developer position in Front-end environment. Ready to help team achieve company goals.",
   },
 ];
