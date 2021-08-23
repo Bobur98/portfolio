@@ -34,7 +34,7 @@ export const ProjectItem = styled.img`
     width: 18rem;
   }
 `;
-export const Button = styled.a`
+export const Button = styled(Link)`
   color: #44474d;
   letter-spacing: 1px;
   font-size: 1.5rem;

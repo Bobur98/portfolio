@@ -11,7 +11,9 @@ const Projects = () => {
         <Wrapper key={value.id}>
           <ProjectImg src={value?.src} />
           <Description>{value.description}</Description>
-          <Button href={value.site}>Visit site</Button>
+          <Button first href={value.site}>
+            Website
+          </Button>
           <Button href={value.github}>GitHub</Button>
         </Wrapper>
       ))}

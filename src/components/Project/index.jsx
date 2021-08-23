@@ -31,6 +31,7 @@ export default function Project() {
           onClick={() => {
             history.push("/projects");
           }}
+          // to="/projects"
         >
           {" "}
           see more{" "}
