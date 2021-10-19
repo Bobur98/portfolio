@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Container,
   NavContainer,
@@ -6,10 +6,10 @@ import {
   Wrapper,
   NavLink,
   NavMenu,
-} from './style';
-import Logo from '../Logo';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import { IconContext } from 'react-icons/lib';
+} from "./style";
+import Logo from "../Logo";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { IconContext } from "react-icons/lib";
 
 export default function Navbar() {
   const [click, setClick] = useState(false);
@@ -17,17 +17,17 @@ export default function Navbar() {
   const closeMobileMenu = () => setClick(false);
 
   return (
-    <IconContext.Provider value={{ color: '#fff' }}>
+    <IconContext.Provider value={{ color: "#fff" }}>
       <Container>
-        <Wrapper to='/home' onClick={closeMobileMenu}>
-          {' '}
-          <Logo />
+        <Wrapper onClick={closeMobileMenu}>
+          {" "}
+          <Logo to="/home" />
         </Wrapper>
         <NavContainer>
           <NavMenu onClick={handleClick} click={click}>
             <NavLink
-              activeClass='active'
-              to='/home'
+              activeClass="active"
+              to="/home"
               spy={true}
               smooth={true}
               offset={50}
@@ -40,7 +40,7 @@ export default function Navbar() {
               smooth={true}
               offset={50}
               duration={500}
-              to='/resume'
+              to="/resume"
             >
               resume
             </NavLink>
@@ -49,7 +49,7 @@ export default function Navbar() {
               smooth={true}
               offset={50}
               duration={500}
-              to='/portfolio'
+              to="/portfolio"
             >
               portfolio
             </NavLink>
@@ -58,7 +58,7 @@ export default function Navbar() {
               smooth={true}
               offset={50}
               duration={500}
-              to='/contact'
+              to="/contact"
             >
               contact
             </NavLink>

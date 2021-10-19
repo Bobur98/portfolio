@@ -7,6 +7,8 @@ import Mapty from "../assets/imgs/maptygif.gif";
 import OrderFood from "../assets/imgs/orderfood.jpg";
 import SimonGame from "../assets/imgs/simongame.jpg";
 import Expenses from "../assets/imgs/expensegif.gif";
+import Easy from "../assets/imgs/easy.gif";
+import Weather from "../assets/imgs/weather.gif";
 
 export const ProjectData = [
   {
@@ -74,5 +76,20 @@ export const ProjectData = [
     github: "https://github.com/Bobur98/DumKitGame",
     description:
       "lovely game for children who likes creating music, this small project was made with html, css and javaScript",
+  },
+  {
+    id: 9,
+    src: `${Easy}`,
+    site: "https://eassy.netlify.app/",
+    github: "https://github.com/Bobur98/Easy",
+    description: "Ecommerse website with nice UI in React.js",
+  },
+  {
+    id: 10,
+    src: `${Weather}`,
+    site: "https://weatheer.netlify.app/",
+    github: "https://github.com/Bobur98/ReactWeatherApp",
+    description:
+      "Weather application that can be found information like pressure humidity, sunset etc",
   },
 ];

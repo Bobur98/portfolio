@@ -19,6 +19,10 @@ export default function Project() {
   }, []);
 
   const items = ProjectData.slice(0, 3);
+
+  // const ClickHandler = () =>{
+
+  // }
   return (
     <Container data-aos="fade-up">
       <BtnWrapper>
@@ -40,7 +44,9 @@ export default function Project() {
 
       <ProjectWrapper className="portfolio-container">
         {items.map((value, index) => (
-          <ProjectItem key={index} src={value?.src} />
+          <a href={value?.site}>
+            <ProjectItem key={index} src={value?.src} />
+          </a>
         ))}
       </ProjectWrapper>
     </Container>

@@ -39,7 +39,7 @@ export const SkillBar = styled.div`
   }
 `;
 
-const fillBars = keyframes`
+export const fillBars = keyframes`
 from{
   width: 0;
 }
@@ -47,6 +47,7 @@ to{
   width:100%;
 }
 `;
+
 export const SkillPer = styled.div`
   height: 10px;
   border-radius: 8px;

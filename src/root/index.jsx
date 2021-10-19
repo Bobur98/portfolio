@@ -8,6 +8,7 @@ import PortfolioPage from "../view/PortfolioPage";
 import ContactPage from "../view/ContactPage";
 import Projects from "../components/Projects";
 import Home from "./home.jsx";
+import Logo from "../components/Logo";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/contact" component={ContactPage} />
         <Route path="/projects" component={Projects} />
         <Route path="/" exact component={Home} />
+        <Route path="/" exact component={Logo} />
       </Switch>
       <Footer />
     </Router>
