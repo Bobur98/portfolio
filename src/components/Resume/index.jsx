@@ -1,8 +1,8 @@
-import React from "react";
-import { Container, Line, Wrapper, Text, LogoWrapper, Button } from "./style";
-import Logo from "../Logo";
-import { data } from "../../mock/resumeData";
-import MyResume from "./Resume_4.pdf";
+import React from 'react';
+import { Container, Line, Wrapper, Text, LogoWrapper, Button } from './style';
+import Logo from '../Logo';
+import { data } from '../../mock/resumeData';
+import MyResume from './resume.pdf';
 
 export default function Resume() {
   return (

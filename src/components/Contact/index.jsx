@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   ContactForm,
   ContactInfo,
@@ -7,22 +7,22 @@ import {
   SocialMediaWrapper,
   Text,
   Wrapper,
-} from "./style";
-import { ContactData } from "../../mock/contact";
+} from './style';
+import { ContactData } from '../../mock/contact';
 
 // import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
   // const [status, setStatus] = useState("");
-  const [enteredName, setEnteredName] = useState("");
-  const [enteredEmail, setEnteredEmail] = useState("");
-  const [enteredMessage, setEnteredMessage] = useState("");
+  const [enteredName, setEnteredName] = useState('');
+  const [enteredEmail, setEnteredEmail] = useState('');
+  const [enteredMessage, setEnteredMessage] = useState('');
 
   // const [state, handleSubmit] = useForm("mrgrobkp");
   const handleSubmit = () => {
-    setEnteredName("");
-    setEnteredEmail("");
-    setEnteredMessage("");
+    setEnteredName('');
+    setEnteredEmail('');
+    setEnteredMessage('');
   };
 
   const nameChangeHandler = (event) => {
@@ -133,13 +133,13 @@ const Contact = () => {
       </Wrapper>
       {ContactData.map((value, index) => (
         <SocialMediaWrapper key={index}>
-          <a href={value.facebook}>
+          <a href={value.facebook} alt="facebook">
             <Icons.FacebookIcon />
           </a>
-          <a href={value.instagram}>
+          <a href={value.instagram} alt="instagram">
             <Icons.InstagramIcon />
           </a>
-          <a href={value.linkedin}>
+          <a href={value.linkedin} alt="linkedIn">
             <Icons.LinkedinIcon />
           </a>
         </SocialMediaWrapper>

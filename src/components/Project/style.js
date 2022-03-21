@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div``;
 export const BtnWrapper = styled.div`
@@ -13,11 +13,11 @@ export const ProjectWrapper = styled.div`
   left: 50%;
   transform: translateX(-50%);
   margin: 6rem 0 10rem 0;
-  @media (max-width: 414px) {
+  @media (max-width: 820px) {
     display: flex;
     flex-direction: column;
   }
-  @media (max-width: 720px) {
+  @media (max-width: 414px) {
     display: flex;
     flex-direction: column;
   }
@@ -29,9 +29,41 @@ export const ProjectItem = styled.img`
     cursor: pointer;
     transform: scale(0.95);
   }
-  @media (max-width: 720px) {
+  @media (max-width: 820px) {
     height: 15rem;
-    width: 18rem;
+    width: 25rem;
+  }
+  @media (max-width: 500px) {
+    height: 13rem;
+    width: 16rem;
+    margin-bottom: 15px;
+  }
+  @media (max-width: 300px) {
+    height: 11rem;
+    width: 13rem;
+    margin-bottom: 15px;
+  }
+`;
+export const ProjectVideo = styled.video`
+  height: 12rem;
+  width: 15rem;
+  &:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+  }
+  @media (max-width: 820px) {
+    height: 15rem;
+    width: 25rem;
+  }
+  @media (max-width: 500px) {
+    height: 13rem;
+    width: 16rem;
+    margin-bottom: 15px;
+  }
+  @media (max-width: 300px) {
+    height: 11rem;
+    width: 14rem;
+    margin-bottom: 15px;
   }
 `;
 export const Button = styled(Link)`
@@ -49,5 +81,10 @@ export const Button = styled(Link)`
   &:hover {
     color: #fff;
     transform: scale(0.95);
+  }
+  @media (max-width: 500px) {
+    position: absolute;
+    font-size: 1.1rem;
+    margin-top: 5.5rem;
   }
 `;

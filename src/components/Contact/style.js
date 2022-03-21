@@ -1,11 +1,11 @@
-import styled, { keyframes } from "styled-components";
-import { ReactComponent as map } from "../../assets/icons/map.svg";
-import { ReactComponent as mail } from "../../assets/icons/mail.svg";
-import { ReactComponent as phone } from "../../assets/icons/phone.svg";
-import { ReactComponent as clock } from "../../assets/icons/clock.svg";
-import { ReactComponent as facebook } from "../../assets/icons/facebook.svg";
-import { ReactComponent as instagram } from "../../assets/icons/instagram.svg";
-import { ReactComponent as linkedin } from "../../assets/icons/linkedin.svg";
+import styled, { keyframes } from 'styled-components';
+import { ReactComponent as map } from '../../assets/icons/map.svg';
+import { ReactComponent as mail } from '../../assets/icons/mail.svg';
+import { ReactComponent as phone } from '../../assets/icons/phone.svg';
+import { ReactComponent as clock } from '../../assets/icons/clock.svg';
+import { ReactComponent as facebook } from '../../assets/icons/facebook.svg';
+import { ReactComponent as instagram } from '../../assets/icons/instagram.svg';
+import { ReactComponent as linkedin } from '../../assets/icons/linkedin.svg';
 
 export const Container = styled.div`
   display: flex;
@@ -17,20 +17,23 @@ export const Container = styled.div`
   box-shadow: 0 0 10px 1px #333;
   max-width: 50%;
   width: 100%;
-  @media (max-width: 414px) {
+
+  @media (max-width: 1400px) {
     margin: 0 auto;
+    max-width: 60%;
+    width: 100%;
+  }
+
+  @media (max-width: 1200px) {
+    margin: 0 auto;
+    max-width: 80%;
+    width: 100%;
+  }
+
+  @media (max-width: 500px) {
+    margin: 0 auto;
+    width: 100%;
     max-width: 90%;
-    width: 100%;
-  }
-  @media (max-width: 768px) {
-    margin: 0 auto;
-    max-width: 80%;
-    width: 100%;
-  }
-  @media (max-width: 1000px) {
-    margin: 0 auto;
-    max-width: 80%;
-    width: 100%;
   }
 `;
 export const Wrapper = styled.div`
@@ -39,30 +42,37 @@ export const Wrapper = styled.div`
   margin: 5rem;
   align-items: center;
   justify-content: center;
-  @media (max-width: 768px) {
+  @media (max-width: 1100px) {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+  }
+  @media (max-width: 820px) {
     display: flex;
     flex-direction: column;
     margin: 3rem;
   }
-  @media (max-width: 414px) {
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+  }
+  @media (max-width: 500px) {
     display: flex;
     flex-direction: column;
     margin: 0.5rem;
   }
-  @media (max-width: 1100px) {
-    margin: 4rem;
-  }
 `;
 export const ContactInfo = styled.div`
   color: var(--color-white);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 2;
   align-items: center;
   justify-content: center;
   .contact {
     text-align: center;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 820px) {
     margin-bottom: 1.5rem;
   }
 `;

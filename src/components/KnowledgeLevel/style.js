@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -14,9 +14,13 @@ export const Skills = styled.div`
   .skill {
     justify-content: space-between;
   }
-  @media (max-width: 320px) {
+  @media (max-width: 1000px) {
     width: 100%;
-    max-width: 80%;
+    max-width: 90%;
+  }
+  @media (max-width: 500px) {
+    width: 100%;
+    max-width: 70%;
   }
 `;
 export const SkillName = styled.div`
@@ -24,18 +28,26 @@ export const SkillName = styled.div`
   color: var(--color-white);
   font-size: small;
   text-transform: uppercase;
-  @media (max-width: 320px) {
-    margin: 0.8rem 3rem 0.8rem 0;
+  @media (max-width: 1000px) {
+    width: 70%;
+  }
+  @media (max-width: 500px) {
+    margin: 0.8rem 0rem 0.8rem 0;
     font-size: 10px;
+    width: 80%;
   }
 `;
 export const SkillBar = styled.div`
   height: 10px;
   position: relative;
   transform: translate(15%, -120%);
-  @media (max-width: 320px) {
+  @media (max-width: 1000px) {
     height: 8px;
-    transform: translate(28%, -130%);
+    transform: translate(30%, -130%);
+  }
+  @media (max-width: 400px) {
+    height: 8px;
+    transform: translate(40%, -130%);
   }
 `;
 
@@ -45,18 +57,21 @@ from{
 }
 to{
   width:100%;
+  
 }
 `;
 
 export const SkillPer = styled.div`
   height: 10px;
+
   border-radius: 8px;
   background-color: var(--color-green);
   animation: ${fillBars} 5.5s ease 1;
   position: relative;
-  @media (max-width: 320px) {
+  @media (max-width: 500px) {
     height: 8px;
     border-radius: 2px;
+    padding: 0;
   }
   &::before {
     content: ${({ per }) => `"${per}%"`};
@@ -66,8 +81,9 @@ export const SkillPer = styled.div`
     font-size: 12px;
     right: 0;
     transform: translateX(180%);
-    @media (max-width: 320px) {
+    @media (max-width: 500px) {
       padding: 0;
+      font-size: 11px;
     }
   }
 `;

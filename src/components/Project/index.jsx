@@ -1,16 +1,17 @@
-import React, { useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import {
   Container,
   ProjectWrapper,
   ProjectItem,
   Button,
   BtnWrapper,
-} from "./style";
-import Headings from "../Headings";
-import { ProjectData } from "../../mock/projectData";
-import Aos from "aos";
-import "aos/dist/aos.css";
+  ProjectVideo,
+} from './style';
+import Headings from '../Headings';
+import { ProjectData } from '../../mock/projectData';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 export default function Project() {
   let history = useHistory();
 
@@ -27,25 +28,35 @@ export default function Project() {
     <Container data-aos="fade-up">
       <BtnWrapper>
         <Headings
-          number={"02"}
-          title={"portfolio"}
-          status={"my latest work."}
+          number={'02'}
+          title={'portfolio'}
+          status={'my latest work.'}
         />
         <Button
           onClick={() => {
-            history.push("/projects");
+            history.push('/projects');
           }}
           // to="/projects"
         >
-          {" "}
-          see more{" "}
+          {' '}
+          see more{' '}
         </Button>
       </BtnWrapper>
 
       <ProjectWrapper className="portfolio-container">
-        {items.map((value, index) => (
-          <a href={value?.site}>
-            <ProjectItem key={index} src={value?.src} />
+        {items.map((value, _) => (
+          <a key={value.id} href={value?.site}>
+            {value?.src.includes('jpg') ? (
+              <ProjectItem src={value?.src.slice(0, -3)} alt="project imgs" />
+            ) : (
+              <ProjectVideo loop autoplay controls muted>
+                <source
+                  src={value?.src}
+                  type="video/mp4"
+                  alt="project videos"
+                />
+              </ProjectVideo>
+            )}
           </a>
         ))}
       </ProjectWrapper>

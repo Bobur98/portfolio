@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -9,7 +9,7 @@ export const Line = styled.div`
   background-color: var(--color-resume-container-blue);
   display: flex;
   flex-direction: column;
-  @media (max-width: 320px) {
+  width: 100wh @media (max-width: 320px) {
     height: 0;
   }
 `;
@@ -20,11 +20,11 @@ export const Wrapper = styled.div`
   justify-content: center;
   margin: 10px auto 0 auto;
   width: 60%;
-  @media (max-width: 414px) {
-    width: 90%;
-  }
-  @media (max-width: 800px) {
+  @media (max-width: 912px) {
     width: 70%;
+  }
+  @media (max-width: 500px) {
+    width: 95%;
   }
   & a {
     text-decoration: none;
@@ -43,12 +43,12 @@ export const Text = styled.p`
   font-size: 15px;
   margin: 5rem;
   line-height: 2;
-  @media (max-width: 414px) {
-    margin: 2rem;
-    letter-spacing: 1px;
-  }
   @media (max-width: 800px) {
     margin: 3rem;
+  }
+  @media (max-width: 500px) {
+    margin: 1rem;
+    letter-spacing: 1px;
   }
 `;
 export const Button = styled.button`
@@ -67,5 +67,9 @@ export const Button = styled.button`
   &:hover {
     background-color: var(--color-green);
     color: var(--color-white);
+  }
+  @media (max-width: 500px) {
+    height: 2rem;
+    width: 8rem;
   }
 `;

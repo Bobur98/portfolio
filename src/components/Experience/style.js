@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 export const Container = styled.div`
   font-size: 14px;
-  max-width: 60%;
+  max-width: 80%;
   width: 100%;
   margin: 0 auto;
   color: #ffffff;
-  @media (max-width: 414px){
+  @media (max-width: 1000px){
     max-width: 90%;
     width: 100%;
     margin: 12rem auto 0 auto;
@@ -32,7 +32,6 @@ export const Container = styled.div`
     box-shadow: none;
     margin: 0;
     padding: 2em 5em !important;
-  
   }
 
   .vertical-timeline-element-title {
@@ -42,8 +41,12 @@ export const Container = styled.div`
 
   #description {
     margin: 0;
-    font-size: 12px;
+    font-size: 18px;
     color: #e4e4e4;
     font-weight: lighter;
+    @media (max-width: 600px){
+   font-size: 12px
+    }
+   
   
 `;

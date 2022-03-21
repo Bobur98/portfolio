@@ -1,15 +1,8 @@
-import React, { useEffect } from "react";
-import {
-  Container,
-  Skills,
-  SkillName,
-  SkillBar,
-  SkillPer,
-  fillBars,
-} from "./style";
-import { knowledgeLevel } from "../../mock/knowledgeLevel";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React, { useEffect } from 'react';
+import { Container, Skills, SkillName, SkillBar, SkillPer } from './style';
+import { knowledgeLevel } from '../../mock/knowledgeLevel';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export default function KnowledgeLevel() {
   useEffect(() => {
